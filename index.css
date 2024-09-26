@@ -90,7 +90,7 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   height: 174px;
   background-color: none;
   top: 16%;
-  left: 10%;
+  left: 22%;
   color: #1E1E1E;
   font-size: 40px;
   font-weight: 700;
@@ -109,7 +109,7 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   height: 275px;
   background-color: none;
   top:40%;
-  left: 12%;
+  left: 22%;
   
 
 } 
@@ -166,8 +166,8 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   height: 400px;
   background-color: red;
   position: relative;
-  left: 54%;
-  top: 0%;
+  left: 57%;
+  top: 10%;
   overflow: hidden; /* 넘치는 부분 숨김 */
   
 }
@@ -189,8 +189,8 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   width: 450px;
   height: 100px;
   position: relative;
-  left: 53%;
-  top: 5%;
+  left: 57%;
+  top: 13%;
 }
 
 .p01 > div:nth-of-type(5) >p {
@@ -212,8 +212,8 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   height: 660px;
   background-color: red;
   position: relative;
-  top: 5%;
-  left: 10%;
+  top: 15%;
+  left: 25%;
   border-radius: 0px 140px 0px 140px;
   position: relative; 
 }
@@ -224,7 +224,7 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   background-color: none;
   position: relative;
   left: 55%;
-  top: -60%;
+  top: -40%;
   color: #DFDED9;
   text-align: center;
 }
@@ -283,6 +283,7 @@ section .page:nth-of-type(2n) .con_wrap .background {right:0}
   text-decoration: none; /* 기본 링크 스타일 제거 */
   font-size: 1rem; /* 폰트 크기 */
   transition: background-color 0.3s; /* 호버 효과 부드럽게 */
+  font-weight: 800;
 
 }
 
