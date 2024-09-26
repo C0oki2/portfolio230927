@@ -1,0 +1,307 @@
+
+@charset "UTF-8";
+
+
+* {margin:0; padding:0; box-sizing:border-box;
+  font-family: "Nanum Myeongjo", serif;
+
+}
+body {height:100%; overflow-y: hidden; }
+html {height:100%;}
+body::-webkit-scrollbar {display: none;}
+ul,li,ol {list-style:none;}
+a {text-decoration:none; color:#555;}
+
+
+canvas {
+  display: block;
+  
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+#wrap {width:100%; height:100%; position:relative;}
+#wrap>.wrap_af {content:""; position:fixed; display:block; width:100%;
+  height:100%; background:rgba(0,0,0,0.5); top:0; left:0;z-index:20; }
+/*오른쪽 버튼*/
+#dot {width:80px; height:250px;  position:fixed; justify-content:center;
+  align-items:center; display:flex;
+  top:50%; right:0px; transform:translatey(-50%); z-index:100;}
+#dot>ul {width:40px; height:220px;}
+#dot li {width:20px; height:20px; position:relative;
+  display:block; margin:10px auto; border-radius:50%;
+  box-shadow:-0px 0px 5px rgba(255,255,255,0.1);}
+#dot li a {background:rgba(255,255,255,0.7);
+  transition:all 0.3s ease-in-out;
+  top:0; left:0; width:100%; height:100%; outline:none; border-radius:50%;
+  background-color:#fff; background:rgba(255,255,255,0.5);
+  cursor:pointer; position:absolute;}
+#dot ul .active {box-shadow:0 0 0 2px #DFDED9;}
+
+#dot ul li:nth-of-type(2).active {box-shadow:0 0 0 2px #DFDED9;}
+#dot ul li:nth-of-type(3).active {box-shadow:0 0 0 2px #DFDED9;}
+#dot ul li:nth-of-type(4).active {box-shadow:0 0 0 2px #DFDED9;}
+#dot ul li:nth-of-type(5).active {box-shadow:0 0 0 2px #DFDED9;}
+#dot ul li:nth-of-type(6).active {box-shadow:0 0 0 2px #DFDED9;}
+#dot ul li:nth-of-type(7).active {box-shadow:0 0 0 2px #DFDED9;}
+
+.active a {transform:scale(0.4);}
+
+#dot li:hover {opacity:1; cursor:pointer;}
+
+section{width:100%; height:100%; position:relative;}
+
+/*페이지*/
+.page {width:100%; height:100%; position:relative; margin:0 auto; background:#f7f0e4;}
+/*p0*/
+
+
+
+/*바탕 포인트 컬러*/
+.background {width:px; height:px; position:absolute; top:10%;}
+section .page:not(:nth-of-type(2n)) .con_wrap .background  {left:0;}
+section .page:nth-of-type(2n) .con_wrap .background {right:0}
+
+.p00 {background:#1E1E1E;
+      position: relative;
+      color:#DFDED9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+.p00 > p:nth-of-type(1) {font-size: 24px;}
+.p00 > p:nth-of-type(2) { font-size: 96px;}
+
+.p01 {background: #fff;
+}
+
+.p01 > div:nth-of-type(1)  {
+  position: absolute;
+  width: 561px;
+  height: 174px;
+  background-color: none;
+  top: 16%;
+  left: 10%;
+  color: #1E1E1E;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.p01 > p { color: white;
+}
+
+
+
+.p01 > div:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 555px;
+  height: 275px;
+  background-color: none;
+  top:40%;
+  left: 12%;
+  
+
+} 
+
+.p01 > div:nth-of-type(2)>div {
+  display: flex;
+}
+
+.p01 > div:nth-of-type(2)>div>div{
+ 
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  background-color: rgb(117, 117, 117);
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+
+
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; 
+
+
+}
+
+.p01 > div:nth-of-type(2)>div>div>p {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+
+
+  margin: 0;
+  text-align: center; 
+
+}
+
+
+.p01 > div:nth-of-type(3) {
+  width: 660px;
+  height: 100px;
+  background-color: none;
+  position: relative;
+  top:85%;
+  left: 10%;
+  font-size: 24px;
+
+}
+
+
+.p01 > div:nth-of-type(4) {
+
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  position: relative;
+  left: 54%;
+  top: 0%;
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  
+}
+
+.p01 > div:nth-of-type(4) > img {
+  width: 100%; /* div의 너비에 맞춤 */
+  height: 100%; /* div의 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율 유지하며 잘림 */
+  position: absolute; /* 부모 div 안에서 위치 조정 가능 */
+  top: 50%; /* 수직 중앙 정렬 */
+  left: 50%; /* 수평 중앙 정렬 */
+  transform: translate(-50%, -50%); /* 이미지 중앙 정렬 */
+}
+
+
+
+.p01 > div:nth-of-type(5)  {
+
+  width: 450px;
+  height: 100px;
+  position: relative;
+  left: 53%;
+  top: 5%;
+}
+
+.p01 > div:nth-of-type(5) >p {
+
+  line-height: 30px;
+}
+
+
+
+.portfolio > div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%; /* 부모 div의 너비에 맞게 */
+  border-radius: 0px 140px 0px 140px; /* 부모 div의 모서리와 동일하게 둥글게 */
+}
+
+
+.portfolio > div:nth-of-type(1) {
+  width: 537px;
+  height: 660px;
+  background-color: red;
+  position: relative;
+  top: 5%;
+  left: 10%;
+  border-radius: 0px 140px 0px 140px;
+  position: relative; 
+}
+
+.portfolio > div:nth-of-type(2) {
+  width: 500px;
+  height: 300px;
+  background-color: none;
+  position: relative;
+  left: 55%;
+  top: -60%;
+  color: #DFDED9;
+  text-align: center;
+}
+
+
+
+.portfolio { background: #1E1E1E; }
+.p05 {background:#1E1E1E;}
+
+/*pf_bot*/
+.pf_bot {width:100%; height:100%; padding:50px 0; position:relative;}
+
+
+/*letters*/
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+
+/*button*/
+
+.button-container {
+  display: flex; /* 버튼을 가로로 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+  gap: 20px; /* 버튼 간격 */
+  margin-top: 50px; /* 상단 여백 */
+}
+
+.circle-button {
+
+  width: 100px; /* 버튼 너비 */
+  height: 100px; /* 버튼 높이 */
+  background-color: #DFDED9; /* 버튼 배경색 */
+  color: #1E1E1E; /* 텍스트 색상 */
+  border-radius: 50%; /* 원형 만들기 */
+  display: flex; /* Flexbox로 텍스트 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  text-decoration: none; /* 기본 링크 스타일 제거 */
+  font-size: 1rem; /* 폰트 크기 */
+  transition: background-color 0.3s; /* 호버 효과 부드럽게 */
+
+}
+
+.circle-button:hover {
+  background-color: #646464; 
+  color: #ffffff;/* 호버 시 배경색 변경 */
+}
+
+/**/
+
+.scroll-box {
+  width: 300px; /* 원하는 너비 */
+  height: 200px; /* 원하는 높이 */
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  position: relative;
+}
+
+.scroll-image {
+  position: absolute;
+  top: 0; /* 이미지를 박스의 상단에 위치시키기 */
+  transition: top 0.5s; /* 부드러운 전환 효과 */
+}
