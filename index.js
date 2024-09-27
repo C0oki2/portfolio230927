@@ -1,4 +1,3 @@
-
 //js/dot.js
 $(function(){
   var dot = $("#dot ul li");

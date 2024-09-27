@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+@media (max-width:1024px){
+
+
+/*Hanmi's Portfolio*/
+
+.p00 {
+
+    width: 100%;
+}
+
+
+
+/*introduce myself*/
+
+.p01 {background: #DFDED9;
+    width: 100%;
+}
+
+.p01 > div {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.p01 > div>:nth-of-type(1) {
+  width: 50%;
+  height: 100vh;
+}
+
+.p01 > div>:nth-of-type(2) {
+  width: 50%;
+  height: 100vh;
+}
+
+
+/*안녕하세요! 감각적인...*/
+.p01 > div>div:nth-of-type(1)> div:nth-of-type(1)  {
+  position: relative;
+  width: 100%;
+  height: 174px;
+  color: #1E1E1E;
+  font-size: 40px;
+  font-weight: 700;
+  top: 25%;
+  left: 1%;
+}
+
+
+/*스킬 나열...*/
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 555px;
+  height: 275px;
+  top:20%;
+  left: 0%;} 
+
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2)>div {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2)>div>div{
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.p01 > div>div:nth-of-type(1)>div:nth-of-type(2)>div>div>p {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin: 0;
+  text-align: center; }
+  
+  /*프로필 사진*/
+
+.p01 >div> div:nth-of-type(2)>div:nth-of-type(1) {
+  width: 60%;
+  height: 60%;
+  position: relative;
+  left: 25%;
+  top: 10%;
+  overflow: hidden;
+}
+
+.p01 > div>div:nth-of-type(2)>div:nth-of-type(1) > img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+/*경험 소개*/
+
+.p01 >div>div:nth-of-type(2)> div:nth-of-type(2)  {
+  width: 450px;
+  height: 100px;
+  position: relative;
+  left: 16%;
+  top:17%;
+}
+
+.p01 >div>div:nth-of-type(2)>div:nth-of-type(2) >p {
+  line-height: 30px;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+
+/*products*/
+
+/*포트폴리오의 큰 틀*/
+.portfolio > div {
+  width: 90%;
+  height: 100vh;
+  background-color: #1E1E1E;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+/*포트폴리오 설명의 홈페이지 사진 박스*/
+
+.portfolio { background: #1E1E1E; }
+
+.portfolio >div> div:nth-of-type(1) {
+  width: 80%;
+  height: auto;
+  background-color: none;
+  position: relative;
+  border-radius: 0px 140px 0px 140px;
+}
+
+.portfolio > div> div:nth-of-type(1) img {
+  width: 80%;
+  height: 80%; 
+  border-radius: 0px 140px 0px 140px; 
+}
+
+/*포트폴리오의 설명 파트*/
+.portfolio > div> div:nth-of-type(2) {
+  width: 70%;
+  height: 80%;
+  background-color: none;
+  position: relative;
+  top: 1%;
+
+  color: #DFDED9;
+  text-align: center;
+}
+
+.portfolio > div>div:nth-of-type(2)>span {
+  line-height: 10px;
+
+}
+
+
+
+/*pf_bot*/
+.pf_bot {width:100%; height:100%; padding:50px 0; position:relative;}
+
+
+/* 자기소개 부분 움직이는 letters*/
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+
+/*원형 button*/
+.button-container {
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.circle-button {
+
+  width: 100px; 
+  height: 100px; 
+  background-color: #DFDED9; 
+  color: #1E1E1E;
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
+  font-size: 1rem; 
+  transition: background-color 0.3s; 
+  font-weight: 800;
+}
+
+.circle-button:hover {
+  background-color: #646464; 
+  color: #ffffff;
+}
+
+
+
+}
+
+
+@media (max-width:768px) {
+
+#dot {display: none;}
+
+/*Hanmi's Portfolio*/
+
+.p00 {background:#1E1E1E;
+  position: relative;
+  color:#DFDED9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p00 > p:nth-of-type(1) {font-size: 22px;}
+.p00 > p:nth-of-type(2) { font-size: 66px;}
+
+
+.p00 a {
+  position: relative;
+  top: 25%;
+  padding-bottom: 20px;
+}
+.p00 a span {
+  position: absolute;
+  top:-130%;
+  left: 50%;
+  width: 20px;
+  height: 40px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.p00 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*introduce myself*/
+
+.p01 {background: #DFDED9;
+}
+
+.p01 > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.p01 > div>:nth-of-type(1) {
+  width: 80%;
+
+}
+
+.p01 > div>:nth-of-type(2) {
+  width: 30px;
+  height: 100vh;
+}
+
+
+/*안녕하세요! 감각적인...*/
+.p01 > div>div:nth-of-type(1)> div:nth-of-type(1)  {
+  position: relative;
+  width: 100%;
+  height: 174px;
+  color: #1E1E1E;
+  font-size: 32px;
+  font-weight: 700;
+  top: 10%;
+  left: 1%;
+}
+
+
+/*스킬 나열...*/
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top:20%;
+  left: 0%;} 
+
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2)>div {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.p01 >div>div:nth-of-type(1)> div:nth-of-type(2)>div>div{
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.p01 > div>div:nth-of-type(1)>div:nth-of-type(2)>div>div>p {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 10px;
+  margin: 0;
+  text-align: center; }
+  
+  /*프로필 사진*/
+
+.p01 >div> div:nth-of-type(2)>div:nth-of-type(1) {
+  visibility: hidden;
+}
+
+/*경험 소개*/
+
+.p01 >div>div:nth-of-type(2)> div:nth-of-type(2)  {
+    visibility: hidden;
+}
+
+
+.p01 >div>div:nth-of-type(2)>div:nth-of-type(2) >p {
+  line-height: 30px;
+}
+
+
+/*products*/
+
+/*포트폴리오의 큰 틀*/
+.portfolio > div {
+  width: 100%;
+  height: auto;
+  background-color: #1E1E1E;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+/*포트폴리오 설명의 홈페이지 사진 박스*/
+
+
+.portfolio >div> div:nth-of-type(1) {
+    display: none;
+}
+
+
+/*포트폴리오의 설명 파트*/
+.portfolio > div> div:nth-of-type(2) {
+  width: 90%;
+  margin-top: 10%;
+  background-color: none;
+  position: relative;
+  color: #DFDED9;
+  text-align: center;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* 자기소개 부분 움직이는 letters*/
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+
+/*원형 button*/
+.button-container {
+  display: flex; 
+  justify-content: start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.circle-button {
+
+  width: 100px; 
+  height: 100px; 
+  background-color: #DFDED9; 
+  color: #1E1E1E;
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
+  font-size: 1rem; 
+  transition: background-color 0.3s; 
+  font-weight: 800;
+}
+
+.circle-button:hover {
+  background-color: #646464; 
+  color: #ffffff;
+}
+
+
+
+    
+}
